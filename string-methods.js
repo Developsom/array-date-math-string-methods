@@ -12,7 +12,7 @@ console.log(word.length);
 
 const fruit = "Banaan";
 const vegetable = "Aardappel";
-
+console.log(fruit.length > vegetable.length)
 
 
 /* Opdracht 2 */
@@ -21,29 +21,31 @@ const vegetable = "Aardappel";
 // ---- Verwachte uitkomst voor fruit: "n"
 // ---- Verwachte uitkomst voor vegetable: "l"
 
-
+//console.log(fruit.charAt(fruit.length -1));
+//console.log(vegetable.charAt(vegetable.length -1));
+console.log(fruit.slice(-1))
+console.log(vegetable.slice(-1))
 
 /* Opdracht 3 */
 //  Haal de spaties aan het begin en eind van onderstaande zin weg en log dit in de terminal
 // ---- Verwachte uitkomst: "De kat krabt de krullen van de trap"
 
 const userInput = "  De kat krabt de krullen van de trap ";
-
-
-
+//console.log(userInput)
+console.log(userInput.trim())
 /* Opdracht 4 */
 // Check of het woord "Fantastisch" in onderstaande zin voorkomt en log dit in de terminal.
 // ---- Verwachte uitkomst: true
 
 const story = "We vinden de behaalde resultaten werkelijk prachtig. Fantastisch, nietwaar?"
-
+console.log(story.includes('Fantastisch'))
 
 
 /* Opdracht 5 */
 // Knip de vraag van bovenstaande tekst (story) af, zodat alleen het eerste gedeelte overblijft en log dit in de terminal.
 // ---- Verwachte uitkomst: "We vinden de behaalde resultaten werkelijk prachtig."
 
-
+console.log(story.replace('Fantastisch, nietwaar?', ''))
 
 /* Opdracht 6 */
 // Maak van onderstaand bedrag een Nederlands bedrag door het volgende te doen:
@@ -54,7 +56,5 @@ const story = "We vinden de behaalde resultaten werkelijk prachtig. Fantastisch,
 
 const price = "$35.59";
 
-
-
-
+console.log(price.replace('$','€').replace('.',','))
 
